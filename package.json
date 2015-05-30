@@ -1,0 +1,43 @@
+{
+  "name": "jss-cli",
+  "version": "1.0.0",
+  "description": "A command line tool for JSS",
+  "main": "bin/cli.js",
+  "bin": {
+    "jss-cli": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsstyles/jss-cli"
+  },
+  "keywords": [
+    "jss",
+    "style",
+    "sheet",
+    "stylesheet",
+    "css",
+    "components",
+    "composable"
+  ],
+  "author": {
+    "name": "Oleg Slobodskoi",
+    "email": "oleg008@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/jsstyles/jss-cli/issues"
+  },
+  "homepage": "https://github.com/jsstyles/jss-cli",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "css": "^2.2.0"
+  }
+}
