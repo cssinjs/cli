@@ -3,6 +3,7 @@
 var fs = require('fs')
 var path = require('path')
 var program = require('commander')
+var converters = require('../index')
 
 program
     .version(require('../package.json').version)
@@ -22,12 +23,12 @@ program.parse(process.argv)
 
 if (!program.args.length) return program.help()
 
-var converters = {
-    '.css': require('./cssToJss')
+var converterExtMap = {
+    '.css': converters.cssToJss
 }
 
 ;(function convert() {
     var code = fs.readFileSync(program.sourcePath, 'utf-8')
     var ext = path.extname(program.sourcePath)
-    console.log(converters[ext](code, program))
+    console.log(converterExtMap[ext](code, program))
 }())

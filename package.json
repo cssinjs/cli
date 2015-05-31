@@ -15,12 +15,7 @@
   },
   "keywords": [
     "jss",
-    "style",
-    "sheet",
-    "stylesheet",
-    "css",
-    "components",
-    "composable"
+    "cli"
   ],
   "author": {
     "name": "Oleg Slobodskoi",
@@ -38,6 +33,7 @@
   "homepage": "https://github.com/jsstyles/jss-cli",
   "dependencies": {
     "commander": "^2.8.1",
-    "css": "^2.2.0"
+    "css": "^2.2.0",
+    "require-dir": "^0.3.0"
   }
 }
