@@ -1,0 +1,37 @@
+body {
+  background-color: red;
+}
+
+.ninja {
+  visibility: hidden;
+  color: black;
+}
+
+#bermuda-triangle {
+  display: none;
+}
+
+.delorean {
+  z-index: -1955;
+}
+
+#chucknorris {
+  color: #B4D455;
+}
+
+#tower-of-pisa {
+  font-style: italic;
+}
+
+.ghost {
+  color: white;
+  opacity: 0.1;
+}
+
+#big-bang::before {
+  content: "";
+}
+
+#titanic {
+  float: none;
+}
