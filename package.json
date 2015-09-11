@@ -7,8 +7,7 @@
     "jss": "bin/cli.js"
   },
   "scripts": {
-    "css2jss": "node bin/cli example/style.css",
-    "test": "node example/test"
+    "css2jss": "node bin/cli example/style.css"
   },
   "repository": {
     "type": "git",
