@@ -31,13 +31,8 @@ var converterExtMap = {
     var code = fs.readFileSync(program.sourcePath, 'utf-8')
     var ext = path.extname(program.sourcePath)
     var jss = converterExtMap[ext](code)
-    /*
-    * program:
-    *   - `pretty` pretty formatting
-    *   - `export` namespace string to add before output
-    */
-    var spaces    = program.pretty ? '  ' : ''
-    var output    = JSON.stringify(jss, null, spaces)
+    var spaces = program.pretty ? '  ' : ''
+    var output = JSON.stringify(jss, null, spaces)
     var jssString = program.export + output + ';'
     console.log(jssString)
 }())
