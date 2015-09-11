@@ -22,6 +22,13 @@ jss
 jss source.css -p > source.jss
 ```
 
+### API
+
+```javascript
+import {cssToJss} from 'jss-cli'
+cssToJss(css, options)
+```
+
 ## License
 
 MIT
