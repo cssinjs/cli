@@ -5,6 +5,6 @@ var css = [
   '}'
 ].join('\n')
 
-var css2jss = require('..').cssToJss
-var jss = css2jss(css)
+var cssToJss = require('..').cssToJss
+var jss = cssToJss(css)
 console.log(JSON.stringify(jss, null, 2))
