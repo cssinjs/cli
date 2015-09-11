@@ -7,7 +7,8 @@
     "jss": "bin/cli.js"
   },
   "scripts": {
-    "css2jss": "node bin/cli example/style.css"
+    "cssToJss": "node bin/cli example/style.css",
+    "example": "babel-node example/test.js"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,8 @@
     "commander": "^2.8.1",
     "css": "^2.2.0",
     "require-dir": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23"
   }
 }

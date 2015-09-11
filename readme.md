@@ -25,15 +25,16 @@ jss source.css -p > source.jss
 ### API
 
 ```javascript
-var css = [
-  '.ninja {',
-  '  visibility: hidden;',
-  '  color: black;',
-  '}'
-].join('\n')
+import { cssToJss } from '../index'
 
-var cssToJss = require('..').cssToJss
+const css = `
+  .ninja {
+    visibility : hidden;
+    color      : black;
+  }
+`
 var jss = cssToJss(css)
+
 console.log(JSON.stringify(jss, null, 2))
 ```
 
