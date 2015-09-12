@@ -19,13 +19,13 @@ jss
 
 ```bash
 # convert css
-jss source.css -p > source.jss
+jss source.css -p > source.js
 ```
 
 ### API
 
 ```javascript
-import { cssToJss } from '../index'
+import { cssToJss } from 'jss-cli'
 
 const css = `
   .ninja {
