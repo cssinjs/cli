@@ -25,8 +25,17 @@ jss source.css -p > source.jss
 ### API
 
 ```javascript
-import {cssToJss} from 'jss-cli'
-cssToJss(css, options)
+import { cssToJss } from '../index'
+
+const css = `
+  .ninja {
+    visibility : hidden;
+    color      : black;
+  }
+`
+var jss = cssToJss(css)
+
+console.log(JSON.stringify(jss, null, 2))
 ```
 
 ## License
