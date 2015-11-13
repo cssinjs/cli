@@ -9,7 +9,7 @@ program
     .version(require('../package.json').version)
     .option('<source>', 'path to the source file')
     .option('-p, --pretty', 'prettify result')
-    .option('-e, --export [export]', 'string to add before the json to make it accessible, defaults to "module.exports = "', String, 'module.exports = ')
+    .option('-f, --format [format]', 'json or cjs', String)
 
 program
     .command('*')
@@ -33,6 +33,6 @@ var converterExtMap = {
     var jss = converterExtMap[ext](code)
     var spaces = program.pretty ? '  ' : ''
     var output = JSON.stringify(jss, null, spaces)
-    var jssString = program.export + output + ';'
-    console.log(jssString)
+    if (program.format === 'cjs') output = 'module.exports = ' + output + ';'
+    console.log(output)
 }())
