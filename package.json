@@ -1,10 +1,9 @@
 {
   "name": "jss-cli",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A command line tool for JSS",
-  "main": "bin/cli.js",
   "bin": {
-    "jss": "bin/cli.js"
+    "jss": "bin/jss.js"
   },
   "scripts": {
     "cssToJss": "node bin/cli example/style.css",

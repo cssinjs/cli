@@ -12,14 +12,28 @@ npm install jss-cli -g
 
 ```bash
 # print help
-jss
+jss --help
 ```
 
 ### Convert CSS to JSS
 
 ```bash
-# convert css
-jss source.css -p > source.js
+# convert css to json
+jss convert source.css -f json > source.js
+# convert css to commonjs
+jss convert source.css -f cjs > source.js
+# convert css to es6
+jss convert source.css -f es6 > source.js
+```
+
+### Convert JSS to CSS
+
+You need either to run the cmd tool locally or to install jss globally, because it will try to require jss.
+Also you can specify a path to jss. Same is about jss plugins.
+
+```bash
+# convert jss to css
+jss convert source.js -f css > source.css
 ```
 
 ### API
