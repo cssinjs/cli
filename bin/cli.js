@@ -9,7 +9,7 @@ program
   .version(require('../package.json').version)
   .option('<source>', 'path to the source file')
   .option('-p, --pretty', 'prettify result')
-  .option('-f, --format [format]', 'json or cjs', String)
+  .option('-f, --format [format]', 'json or cjs, default is json', String, 'json')
 
 program
   .command('*')
@@ -27,12 +27,21 @@ var converterExtMap = {
   '.css': converters.cssToJss
 }
 
-;(function convert() {
+function convert() {
   var code = fs.readFileSync(program.sourcePath, 'utf-8')
   var ext = path.extname(program.sourcePath)
   var jss = converterExtMap[ext](code)
   var spaces = program.pretty ? '  ' : ''
   var output = JSON.stringify(jss, null, spaces)
-  if (program.format === 'cjs') output = 'module.exports = ' + output + ';'
+  switch (program.format) {
+    case 'cjs':
+      output = 'module.exports = ' + output + ';'
+      break
+    case 'es6':
+      output = 'export default ' + output
+      break
+  }
   console.log(output)
-}())
+}
+
+convert()
