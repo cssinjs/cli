@@ -51,7 +51,7 @@ const css = `
     color      : black;
   }
 `
-var jss = cssToJss(css)
+var jss = cssToJss({code: css})
 
 console.log(JSON.stringify(jss, null, 2))
 ```
