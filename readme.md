@@ -4,20 +4,7 @@ A command line tool for JSS
 
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/cssinjs/lobby)
 
-## Install
-
-```bash
-npm install jss-cli -g
-```
-
-## Usage
-
-```bash
-# print help
-jss --help
-```
-
-### Convert CSS to JSS
+## Convert CSS to JSS
 
 ```bash
 # convert css to json
@@ -28,30 +15,34 @@ jss convert source.css -f cjs > source.js
 jss convert source.css -f es6 > source.js
 ```
 
-### Convert JSS to CSS
+## Convert JSS to CSS
 
-You need either to run the cmd tool locally or to install jss globally, because it will try to require jss.
-Also you can specify a path to jss. Same is about jss plugins.
+You need either to run the cmd tool locally or to install JSS globally, because it will try to require JSS.
+Also you can specify a path to JSS. Same is about JSS plugins.
 
 ```bash
 # convert jss to css
 jss convert source.js -f css > source.css
 ```
 
-### API
+## API
 
 ```javascript
-import { cssToJss } from 'jss-cli'
+import {cssToJss} from 'jss-cli'
 
 const css = `
-  .ninja {
+  .container {
     visibility : hidden;
-    color      : black;
+    color: black;
   }
 `
-var jss = cssToJss({code: css})
+cssToJss({code: css})
+```
 
-console.log(JSON.stringify(jss, null, 2))
+## Install
+
+```bash
+npm install jss-cli -g
 ```
 
 ## License
