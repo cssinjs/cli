@@ -1,4 +1,4 @@
-## 4.1.0 / 2017-05-23
+## 4.2.0 / 2017-05-23
 
 - Use local jss version if no version is provided when converting from css
 - Added --dashes option to convert to js using dashes, camelizes by default now
