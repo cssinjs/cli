@@ -4,14 +4,18 @@ A command line tool for JSS
 
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/cssinjs/lobby)
 
+[![CLI Demo](demo.gif)]
+
 ## Convert CSS to JSS
 
 ```bash
-# convert css to json
+# Convert CSS to JSS with multiline input support
+jss convert -m
+# Convert css to json
 jss convert source.css -f json > source.js
-# convert css to commonjs
+# Convert css to commonjs
 jss convert source.css -f js -e cjs > source.js
-# convert css to es6
+# Convert css to es6
 jss convert source.css -f js -e es6 > source.js
 ```
 
