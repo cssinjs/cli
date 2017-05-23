@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var fs = require('fs')
-var path = require('path')
-var program = require('commander')
-var util = require('util')
-var converters = require('../index')
-var multilinePrompt = require('../lib/multilinePrompt')
-var execModule = require('../lib/execModule')
+const fs = require('fs')
+const path = require('path')
+const program = require('commander')
+const stringifyObject = require('stringify-object')
+const converters = require('../index')
+const multilinePrompt = require('../lib/multilinePrompt')
+const execModule = require('../lib/execModule')
 
 function list(val) {
   return val.split(',').map(function(str) {
@@ -42,7 +42,7 @@ function convert(src) {
 
   switch (program.format) {
     case 'js':
-      output = util.inspect(converted, {depth: null})
+      output = stringifyObject(converted, {indent: '  '})
       break
     case 'json':
       output = JSON.stringify(converted, null, 2)
@@ -78,7 +78,7 @@ program
       console.log('Input source:')
       multilinePrompt((src) => {
         try {
-          console.log(converter({code: src}) + '\n')
+          console.log(convert(src) + '\n')
         } catch (err) {
           console.log(err.message)
         }

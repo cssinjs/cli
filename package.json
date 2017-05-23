@@ -29,7 +29,8 @@
   "dependencies": {
     "commander": "^2.8.1",
     "css": "^2.2.0",
-    "require-dir": "^0.3.0"
+    "require-dir": "^0.3.0",
+    "stringify-object": "^3.2.0"
   },
   "devDependencies": {
     "babel": "^5.8.23"
