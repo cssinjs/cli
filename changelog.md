@@ -1,6 +1,8 @@
 ## 4.1.0 / 2017-05-23
 
-- use local jss version if no version is provided when converting from css
+- Use local jss version if no version is provided when converting from css
+- Added --dashes option to convert to js using dashes, camelizes by default now
+- Added --unit option which allows to strip units which match the passed unit from the values and make it a number value
 
 ## 4.0.1 / 2017-05-23
 

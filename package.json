@@ -27,6 +27,7 @@
   },
   "homepage": "http://cssinjs.org",
   "dependencies": {
+    "camelcase-keys-deep": "^0.1.0",
     "commander": "^2.8.1",
     "css": "^2.2.0",
     "jss": "^7.1.2",

@@ -37,7 +37,11 @@ function convert(src) {
     })
   }
 
-  var converted = converter({code: src})
+  var converted = converter({
+    code: src,
+    dashes: program.dashes,
+    unit: program.unit
+  })
   var output
 
   switch (program.format) {
@@ -67,6 +71,8 @@ program
   .option('-m, --multiline', 'multiline prompt for the source input')
   .option('-f, --format [format]', 'target format, possible values: css, js, json, defaults to js', 'js')
   .option('-e, --export [export]', 'how to export the object: cjs, es6', '')
+  .option('-d, --dashes', 'use dashes for jss output')
+  .option('-u, --unit [unit]', 'strip default unit, defaults to px', 'px')
   .option('-j, --jss [jss]', 'path to a module with jss instance as a default export')
   .option('--plugins [plugins]', 'plugins to use in case --jss option hasn\'t been used', list, [])
 
