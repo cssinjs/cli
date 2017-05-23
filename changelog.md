@@ -1,3 +1,7 @@
+## 4.1.0 / 2017-05-23
+
+- use local jss version if no version is provided when converting from css
+
 ## 4.0.1 / 2017-05-23
 
 - Nicer output format for js objects

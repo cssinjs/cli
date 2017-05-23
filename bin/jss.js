@@ -67,7 +67,7 @@ program
   .option('-m, --multiline', 'multiline prompt for the source input')
   .option('-f, --format [format]', 'target format, possible values: css, js, json, defaults to js', 'js')
   .option('-e, --export [export]', 'how to export the object: cjs, es6', '')
-  .option('-j, --jss [jss]', 'path to a module with jss instance as a default export', 'jss')
+  .option('-j, --jss [jss]', 'path to a module with jss instance as a default export')
   .option('--plugins [plugins]', 'plugins to use in case --jss option hasn\'t been used', list, [])
 
 program
