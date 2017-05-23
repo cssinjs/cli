@@ -10,9 +10,9 @@ A command line tool for JSS
 # convert css to json
 jss convert source.css -f json > source.js
 # convert css to commonjs
-jss convert source.css -f cjs > source.js
+jss convert source.css -f js -e cjs > source.js
 # convert css to es6
-jss convert source.css -f es6 > source.js
+jss convert source.css -f js -e es6 > source.js
 ```
 
 ## Convert JSS to CSS
