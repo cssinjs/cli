@@ -1,3 +1,9 @@
+## 4.2.1 / 2017-06-06
+
+- Detect a compound/multi value.
+- Fix camelization.
+- Fix path detection.
+
 ## 4.2.0 / 2017-05-23
 
 - Use local jss version if no version is provided when converting from css
