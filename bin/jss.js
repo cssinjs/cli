@@ -24,7 +24,7 @@ function convert(src) {
   var converter = formatConverterMap[program.format]
 
   // We assume its a path.
-  if (src.indexOf(path.sep) !== -1) {
+  if (src.split('\n')[0].indexOf(path.sep) !== -1) {
     if (!path.isAbsolute(src)) src = path.resolve(process.cwd(), src)
     src = fs.readFileSync(src, 'utf-8')
   }
