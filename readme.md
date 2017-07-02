@@ -4,7 +4,7 @@ A command line tool for JSS
 
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/cssinjs/lobby)
 
-![CLI Demo](demo.gif)
+![CLI Demo](https://raw.githubusercontent.com/cssinjs/cli/master/demo.gif)
 
 ## Convert CSS to JSS
 
