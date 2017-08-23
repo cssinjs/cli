@@ -49,6 +49,10 @@ cssToJss({code: css})
 npm install jss-cli -g
 ```
 
+## Issues
+
+File a bug against [cssinjs/jss prefixed with \[cli\]](https://github.com/cssinjs/jss/issues/new?title=[cli]%20).
+
 ## License
 
 MIT
