@@ -32,7 +32,7 @@
     "jss": "^7.1.2",
     "jss-preset-default": "^2.0.0",
     "lodash": "^4.17.4",
-    "require-dir": "^0.3.0",
+    "require-dir": "^0.3.2",
     "stringify-object": "^3.2.0"
   },
   "devDependencies": {
