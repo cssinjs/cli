@@ -29,8 +29,8 @@
   "dependencies": {
     "commander": "^2.8.1",
     "css": "^2.2.0",
-    "jss": "^7.1.2",
-    "jss-preset-default": "^2.0.0",
+    "jss": "^9.0.0",
+    "jss-preset-default": "^4.0.1",
     "lodash": "^4.17.4",
     "require-dir": "^0.3.2",
     "stringify-object": "^3.2.0"

@@ -1,3 +1,7 @@
+## 5.0.0 / 2017-10-13
+
+- Update to JSS v9 and preset v4
+
 ## 4.2.2 / 2017-10-13
 
 - Ignore CSS inline comments.
