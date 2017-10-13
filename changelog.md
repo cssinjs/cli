@@ -1,3 +1,9 @@
+## 4.2.2 / 2017-10-13
+
+- Ignore CSS inline comments.
+- Handle fallbacks.
+- Merge value of rules with the same key.
+
 ## 4.2.1 / 2017-06-06
 
 - Detect a compound/multi value.
