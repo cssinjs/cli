@@ -1,3 +1,9 @@
+## 5.0.1 / 2018-01-26
+
+- Fixed camelization for vendor prefixed properties
+- Update JSS and preset to the latest versions
+- Updated CSS package to the latest
+
 ## 5.0.0 / 2017-10-13
 
 - Update to JSS v9 and preset v4
