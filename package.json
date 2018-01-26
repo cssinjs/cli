@@ -28,7 +28,7 @@
   "homepage": "http://cssinjs.org",
   "dependencies": {
     "commander": "^2.8.1",
-    "css": "^2.2.0",
+    "css": "*",
     "jss": "^9.0.0",
     "jss-preset-default": "^4.0.1",
     "lodash": "^4.17.4",
