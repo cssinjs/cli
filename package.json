@@ -1,6 +1,6 @@
 {
   "name": "jss-cli",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "A command line tool for JSS",
   "bin": {
     "jss": "bin/jss.js"
