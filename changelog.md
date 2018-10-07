@@ -1,3 +1,7 @@
+## 5.0.2 / 2018-10-07
+
+- Fix CSS file path without slashes
+
 ## 5.0.1 / 2018-01-26
 
 - Fixed camelization for vendor prefixed properties
