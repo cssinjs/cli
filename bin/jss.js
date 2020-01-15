@@ -95,6 +95,12 @@ program
     }
   })
 
+// show up error message on unknown commands
+program.on('command:*', (cmd) => {
+  console.error(`Unknown command ${cmd}`)
+  program.help()
+});
+
 program.parse(process.argv)
 
 if (!program.args.length) return program.help()
