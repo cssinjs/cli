@@ -1,3 +1,8 @@
+## 6.0.0 / 2020-04-21
+
+- Upgrade to JSS v10
+- Fix for formatProp
+
 ## 5.0.2 / 2018-10-07
 
 - Fix CSS file path without slashes
