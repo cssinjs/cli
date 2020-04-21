@@ -28,14 +28,16 @@
   "homepage": "http://cssinjs.org",
   "dependencies": {
     "commander": "^2.8.1",
-    "css": "^2.2.1",
-    "jss": "^9.5.1",
-    "jss-preset-default": "^4.1.0",
+    "css": "^2.2.4",
+    "jss": "^10.1.1",
+    "jss-preset-default": "^10.1.1",
     "lodash": "^4.17.4",
     "require-dir": "^0.3.2",
-    "stringify-object": "^3.2.0"
+    "stringify-object": "^3.3.0"
   },
   "devDependencies": {
-    "babel": "^5.8.23"
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5"
   }
 }
