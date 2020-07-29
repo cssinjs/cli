@@ -1,3 +1,7 @@
+## 6.0.1 / 2020-07-29
+
+- Fix escaping [#19](https://github.com/cssinjs/cli/pull/19)
+
 ## 6.0.0 / 2020-04-21
 
 - Upgrade to JSS v10
