@@ -13,6 +13,7 @@ body {
 
 .delorean {
   z-index: -1955;
+  width: 5px;
 }
 
 #chucknorris {

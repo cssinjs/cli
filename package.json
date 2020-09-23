@@ -6,7 +6,7 @@
     "jss": "bin/jss.js"
   },
   "scripts": {
-    "cssToJss": "node bin/cli example/style.css",
+    "cssToJss": "node bin/jss convert example/style.css -f js -e cjs",
     "example": "babel-node example/test.js"
   },
   "repository": {
